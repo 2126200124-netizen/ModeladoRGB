@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1947.0" prefViewportHeight="600.0" prefViewportWidth="800.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.actividad26modelocolor.ModeloColorController">
+   <content>
+      <VBox prefHeight="1841.0" prefWidth="491.0" spacing="15.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="Morones Torres Jorge Arnulfo" />
+            <Label text="1. TextField RGB" />
+            <Label text="Rojo" />
+            <TextField fx:id="txtRojo">
+               <tooltip>
+                  <Tooltip text="Introduzca un valor entre 0 a 255" />
+               </tooltip>
+            </TextField>
+            <Label text="Verde" />
+            <TextField fx:id="txtVerde">
+               <tooltip>
+                  <Tooltip text="Introduzca un valor entre 0 a 255" />
+               </tooltip>
+            </TextField>
+            <Label text="Azul" />
+            <TextField fx:id="txtAzul">
+               <tooltip>
+                  <Tooltip text="Introduzca un valor entre 0 a 255" />
+               </tooltip>
+            </TextField>
+            <HBox prefHeight="77.0" prefWidth="125.0" spacing="10.0">
+               <children>
+                  <Pane fx:id="pane1" prefHeight="25.0" prefWidth="456.0" style="-fx-border-color: black;" />
+               </children>
+            </HBox>
+            <Separator prefHeight="15.0" prefWidth="125.0" />
+            <HBox prefHeight="16.0" prefWidth="125.0">
+               <children>
+                  <Label text="2. Spinner RGB" />
+               </children>
+            </HBox>
+            <VBox prefHeight="90.0" prefWidth="125.0">
+               <children>
+                  <Label text="Rojo" />
+                  <Spinner fx:id="spinRojo" />
+                  <Label text="Verde" />
+                  <Spinner fx:id="spinVerde" />
+                  <Label text="Azul" />
+                  <Spinner fx:id="spinAzul" />
+               </children>
+            </VBox>
+            <Pane fx:id="pane2" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="32.0" prefWidth="125.0">
+               <children>
+                  <Label text="3. Slider RGB" />
+               </children>
+            </HBox>
+            <Label text="Rojo" />
+            <Slider fx:id="sliderRojo" max="255.0">
+               <tooltip>
+                  <Tooltip text="Seleccione el nivel de color" />
+               </tooltip>
+            </Slider>
+            <Label text="Verde" />
+            <Slider fx:id="sliderVerde" max="255.0">
+               <tooltip>
+                  <Tooltip text="Seleccione el nivel de color" />
+               </tooltip>
+            </Slider>
+            <Label text="Azul" />
+            <Slider fx:id="sliderAzul" max="255.0">
+               <tooltip>
+                  <Tooltip text="Seleccione el nivel de color" />
+               </tooltip>
+            </Slider>
+            <Pane fx:id="pane3" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="17.0" prefWidth="100.0">
+               <children>
+                  <Label text="4. CheckBox" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="chkRojo" mnemonicParsing="false" text="Rojo" />
+            <CheckBox fx:id="chkVerde" mnemonicParsing="false" text="Verde" />
+            <CheckBox fx:id="chkAzul" mnemonicParsing="false" text="Azul" />
+            <Pane fx:id="pane4" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="54.0" prefWidth="125.0">
+               <children>
+                  <Label text="5.RadioButton" />
+               </children>
+            </HBox>
+            <RadioButton fx:id="rbRojo" mnemonicParsing="false" text="Rojo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgColores" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbVerde" mnemonicParsing="false" text="Verde" toggleGroup="$tgColores" />
+            <RadioButton fx:id="rbAzul" mnemonicParsing="false" text="Azul" toggleGroup="$tgColores" />
+            <Pane fx:id="pane5" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="37.0" prefWidth="125.0">
+               <children>
+                  <Label text="6. Estado" />
+               </children>
+            </HBox>
+            <ToggleButton fx:id="tbEstado" mnemonicParsing="false" text="RGB" />
+            <HBox prefHeight="36.0" prefWidth="125.0">
+               <children>
+                  <Label text="7.ColorPicker" />
+               </children>
+            </HBox>
+            <ColorPicker fx:id="colorPicker" prefHeight="100.0" prefWidth="125.0" />
+            <Pane fx:id="pane6" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="44.0" prefWidth="125.0">
+               <children>
+                  <Label text="8. Hexadecimal" />
+               </children>
+            </HBox>
+            <TextField fx:id="txtHex">
+               <tooltip>
+                  <Tooltip text="Introduzca un color con formato #RRGGBB" />
+               </tooltip>
+            </TextField>
+            <Pane fx:id="pane7" prefHeight="94.0" prefWidth="125.0" style="-fx-border-color: black;" />
+            <VBox prefHeight="95.0" prefWidth="195.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="197.0" text="9.Informacion del resultado" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <TextArea fx:id="txtInfo" editable="false" prefHeight="116.0" prefWidth="195.0" scrollTop="5.0" wrapText="true" />
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
