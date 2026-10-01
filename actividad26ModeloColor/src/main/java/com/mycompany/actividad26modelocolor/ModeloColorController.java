@@ -112,20 +112,20 @@ public class ModeloColorController implements Initializable {
             int r = (int) (newColor.getRed()*255);
             int g = (int) (newColor.getGreen()*255);
             int b = (int) (newColor.getBlue()*255);
-            aplicarColorHex(pane6, r, g, b); // Corregido: Era pane6, no pane7
+            aplicarColorHex(pane6, r, g, b); 
             txtInfo.appendText("ColorPicker seleccionado: "+ newColor + "\n");
         });
 
        // seccion 8
         txtHex.textProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.matches("^#[0-9A-Fa-f]{6}$")){
-                pane7.setStyle("-fx-background-color:"+ newValue +"; -fx-border-color: black;"); // Corregido: border-color
+                pane7.setStyle("-fx-background-color:"+ newValue +"; -fx-border-color: black;"); 
                 txtInfo.appendText("Color hexadecimal valido: "+newValue+"\n");
             }
         });
     }
 
-    // --- MÉTODOS DE APOYO (¡Este te faltaba!) ---
+
     private void aplicarColorHex(Pane pane, int r, int g, int b) {
         String hex = String.format("#%02X%02X%02X", r, g, b);
         pane.setStyle("-fx-background-color: " + hex + "; -fx-border-color: black;");
